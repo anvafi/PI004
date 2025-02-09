@@ -21,5 +21,9 @@ router.get("/ruta/ruta/ruta/ruta", (req, res) => {
   console.log("fondo");
   res.json("lleison");
 });
+router.post("/rutaPOST", (req, res) => {
+  console.log("acceso a POST");
+  res.send("hola, respuesta");
+});
 
 module.exports = router;
