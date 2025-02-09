@@ -24,6 +24,27 @@ router.get("/ruta/ruta/ruta/ruta", (req, res) => {
 router.post("/rutaPOST", (req, res) => {
   console.log("acceso a POST");
   res.send("hola, respuesta");
+  req.body = "test de request body";
+});
+router.post("/rutaPOST/rutaPOST", (req, res) => {
+  console.log("acceso a POST");
+  res.send("hola, respuesta 2");
+  req.body = "test de request body";
+});
+router.post("/rutaPOST/rutaPOST/rutaPOST", (req, res) => {
+  console.log("acceso a POST");
+  res.send("hola, respuesta 3");
+  req.body = "test de request body";
+});
+router.post("/rutaPOST/rutaPOST/rutaPOST/rutaPOST", (req, res) => {
+  console.log("acceso a POST");
+  res.send("hola, respuesta 4");
+  req.body = "test de request body";
+});
+router.post("/rutaPOST/rutaPOST/rutaPOST/rutaPOST/rutaPOST", (req, res) => {
+  console.log("acceso a POST");
+  res.send("hola, respuesta 5");
+  req.body = "test de request body";
 });
 
 module.exports = router;
